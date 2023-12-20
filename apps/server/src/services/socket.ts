@@ -5,14 +5,14 @@ const pub = new Redis({
     host: "redis-3d9001ae-patel97sagar-49d5.a.aivencloud.com",
     port: 26361,
     username: "default",
-    password: "AVNS_qGLTVhNWKYS8iFxev2f",
+    password: "checkout Aiven Redis",
 });
 
 const sub = new Redis({
     host: "redis-3d9001ae-patel97sagar-49d5.a.aivencloud.com",
     port: 26361,
     username: "default",
-    password: "AVNS_qGLTVhNWKYS8iFxev2f",
+    password: "checkout Aiven Redis",
 });
 
 class SocketService {
