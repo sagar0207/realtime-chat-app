@@ -1,3 +1,18 @@
+# Realtime Scalable Chat Application
+
+This application allows sending/receiving messages from users in realtime.
+
+## Tech Stack
+- Node.JS: for backend server(socket.io)
+- Next.JS: for frontend
+- Turborepo: for building, packaging the application. Creates a monorepo.
+- Redis on Aiven
+Redis client for NodeJS: https://github.com/redis/ioredis
+- RedisInsight: https://redis.com/redis-enterprise/redis-insight/
+
+Socket server publishes messages in Redis and subscribes to the redis channel to retrieve new messages.
+This eliminates storing messages at server level. This helps achieve scalability as users can send and receive messages even though they are connected to different servers.
+
 # Turborepo starter
 
 This is an official starter Turborepo.
